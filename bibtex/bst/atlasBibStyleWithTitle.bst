@@ -1096,14 +1096,14 @@ FUNCTION {techreport}
   blank.sep
   format.tr.number output
 %  institution "institution" output.check
-%  address output.check
+  address output.check
+  note output
   format.date output
 %  new.block
   format.eprint output
 %  new.block
   format.url output
   new.block
-  note output
   fin.entry
 }
 
