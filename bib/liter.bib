@@ -1,68 +1,8 @@
-@INPROCEEDINGS {author:06,
- title = {Some publication title},
- author = {First Author and Second Author},
- crossref = {conference:06},
- pages = {330--331},
- }
- 
- @PROCEEDINGS {conference:06,
- editor = {First Editor and Second Editor},
- booktitle = {Proceedings of the Xth Conference on XYZ},
- year = {2006},
- month = {October},
- }
- 
-@mastersthesis {,
-author = {},
-title = {},
-school = {},
-year = {}
-}
-
-@PROCEEDINGS {,
- editor = {},
- booktitle = {},
- year = {},
- month = {}
- }
- 
-@techreport {,
-author = {},
-title = {},
-institution = {},
-author = {}
-}
-
-@electronic {,
-  author        = {},
-  title         = {},
-  howpublished  = {},
-  url           = {},
-  month         = {},
-  year          = {}
-}
-
-
-
 % mastersthesis
  
-@mastersthesis {MT:xx,
-author = {藤山 翔乃},
-title = {LHC-ATLAS 実験における長寿命新粒子探索に用いる信号事象の飛跡及び崩壊点再構成に関する研究},
-school = {九州大学大学院},
-year = {2016}
-}
-
 @mastersthesis {MT:01,
 author = {角源一郎},
 title = {LHC-ATLAS 実験における新物理探索のための重い長寿命荷電粒子トリガーの性能評価},
-school = {神戸大学},
-year = {2020}
-}
-
-@mastersthesis {MT:02,
-author = {塩見崇宏},
-title = {LHC-ATLAS 実験における第三期運転に向けた初段ミューオントリガーアルゴリズムの開発},
 school = {神戸大学},
 year = {2020}
 }
@@ -88,15 +28,33 @@ school = {神戸大学},
 year = {2012}
 }
 
-
 %techreport
 
-@techreport {TR:01,
-author = {G. Aad, E. Abat},
-title = {The ATLAS Experiment at the CERN Large Hadron Collider},
-institution = {The ATLAS Collaboration},
-year = {2008}
+@article{TR:01x,
+	doi = {10.1088/1748-0221/3/08/s08003},
+	year = 2008,
+	month = {aug},
+	publisher = {{IOP} Publishing},
+	volume = {3},
+	number = {08},
+	pages = {S08003--S08003},
+	collaboration = {ATLAS Collaboration},
+	journal = {Journal of Instrumentation},
 }
+
+@article{TR:01,
+	doi = {10.1088/1748-0221/3/08/s08003},
+	url = {https://doi.org/10.1088/1748-0221/3/08/s08003},
+	year = 2008,
+	month = {aug},
+	publisher = {{IOP} Publishing},
+	volume = {3},
+	number = {08},
+	pages = {S08003--S08003},
+	collaboration = {ATLAS Collaboration},
+	title = {The {ATLAS} Experiment at the {CERN} Large Hadron Collider},
+	journal = {Journal of Instrumentation}
+	}
 
 @techreport {TR:02,
  author = {D. Lellouch and L. Levinson},
@@ -105,10 +63,6 @@ year = {2008}
  year = {2005}
  }
 
-@techreport {TR:03xx,
- title = {Measurement of Higgs Boson Production Cross Sections in the Diphoton Channel}
- }
- 
 @article{TR:03,
    title={Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC},
    volume={716},
@@ -118,7 +72,7 @@ year = {2008}
    number={1},
    journal={Physics Letters B},
    publisher={Elsevier BV},
-   author={Aad, G. and Abajyan, T. and Abbott, B. and Abdallah, J. and Abdel Khalek, S. and Abdelalim, A.A. and Abdinov, O. and Aben, R. and Abi, B. and Abolins, M. and AbouZeid, O.S. and Abramowicz, H. and Abreu, H. and et al.},
+   collaboration={ATLAS Collaboration},
    year={2012},
    month={Sep},
    pages={1–29} }
@@ -132,51 +86,91 @@ year = {2008}
    number={1},
    journal={Physics Letters B},
    publisher={Elsevier BV},
-   author={Chatrchyan, S. and Khachatryan, V. and Sirunyan, A.M. and Tumasyan, A. and Adam, W. and Aguilo, E. and Bergauer, T. and Dragicevic, M. and Erö, J. and Fabjan, C. and Friedl, M. and Frühwirth, R. and Ghete, V.M. and et al.},
+   collaboration={CMS Collaboration},
    year={2012},
    month={Sep},
    pages={30–61} }
 
+@techreport{TR:04,
+      title         = "{Technical Design Report for the Phase-II Upgrade of the
+                       ATLAS Muon Spectrometer}",
+      institution   = "CERN",
+      collaboration = "ATLAS Collaboration",
+      address       = "Geneva",
+      reportNumber  = "CERN-LHCC-2017-017, ATLAS-TDR-026",
+      month         = "Sep",
+      year          = "2017",
+      url           = "https://cds.cern.ch/record/2285580",
+}
 
-@techreport {TR:04,
- title = {Technical Design Report for the Phase-II Upgrade of the ATLAS Muon Spectrometer}
- institution = {The ATLAS Collaboration},
- year = {2017}
- }
-
-@techreport {TR:05,
+@techreport {TR:05xx,
  author = {T. Kawamoto et.al},
  title = {New Small Wheel Technical Design Report}
- institution = {The ATLAS Collaboration},
+ collaboration = {ATLAS Collaboration},
  year = {2013}
  }
+
+@techreport{TR:05,
+      title         = "{New Small Wheel Technical Design Report}",
+      reportNumber  = "CERN-LHCC-2013-006, ATLAS-TDR-020",
+      collaboration = {ATLAS Collaboration},
+      month         = "Jun",
+      year          = "2013",
+      url           = "https://cds.cern.ch/record/1552862",
+}
  
-@techreport {TR:06,
- author = {S. Akatsuka et al.},
- title = {The BIS78 Resistive Plate Chambers upgrade of the ATLAS Muon Spectrometer for the LHC Run-3}
- year = {2020}
- }
+@article{TR:06,
+   title={The BIS78 Resistive Plate Chambers upgrade of the ATLAS Muon Spectrometer for the LHC Run-3},
+   volume={15},
+   ISSN={1748-0221},
+   url={http://dx.doi.org/10.1088/1748-0221/15/10/C10026},
+   DOI={10.1088/1748-0221/15/10/c10026},
+   number={10},
+   journal={Journal of Instrumentation},
+   publisher={IOP Publishing},
+   author={Massa, L.},
+   year={2020},
+   month={Oct},
+   pages={C10026–C10026} }
 
-@techreport {TR:07,
- author = {Massa, Lorenzo},
- title = {Performance estimation of the Level-1 Endcap muon at Run 3}
- year = {2018}
- }
+@article{TR:07,
+   title={ATLAS Level-1 Endcap Muon Trigger for Run 3},
+   volume={245},
+   %ISSN={1748-0221},
+   url={https://doi.org/10.1051/epjconf/202024501002},
+   DOI={10.1051/epjconf/202024501002},
+   number={6},
+   journal={Journal of Instrumentation},
+   publisher={IOP Publishing},
+   collaboration={ATLAS Collaboration},
+   year={2020},
+   month={Oct},
+   pages={C10026–C10026} }
 
-@techreport {TR:08,
- author = {Harrington, R D},
- title = {ATLAS Fast Simulation: Atlfast-II and the Integrated Simulation Framework}
- year = {2012}
- }
+@article{TR:08,
+      author        = "Harrington, R D",
+      title         = "{ATLAS Fast Simulation: Atlfast-II and the Integrated
+                       Simulation Framework}",
+      month         = "Jul",
+      year          = "2014",
+      url           = "https://cds.cern.ch/record/1743555",
+}
 
 %article
 
-@article {AR:01,
- author = {Stephen P. Martin},
- title = {A Supersymmetry Primer},
- journal = {hep-ph},
- year = {2016}
- } 
+
+@article{AR:01,
+   title={A SUPERSYMMETRY PRIMER},
+   ISSN={1793-1339},
+   url={http://dx.doi.org/10.1142/9789812839657_0001},
+   DOI={10.1142/9789812839657_0001},
+   journal={Advanced Series on Directions in High Energy Physics},
+   publisher={WORLD SCIENTIFIC},
+   author={MARTIN, STEPHEN P.},
+   year={1998},
+   month={Jul},
+   pages={1–98} }
+
 
 @article {AR:02,
  author = {M.Aaboud and G.Aad},
@@ -186,12 +180,26 @@ year = {2008}
  } 
  
 @article {AR:03,
- author = {The ATLAS Collaboration},
+ 
  title = {Searches for heavy long-lived charged particles with the ATLAS
 detector in proton–proton collisions at √s = 8 TeV},
  journal = {CERN-PH-EP-2014-252},
  year = {2015}
  } 
+ 
+@article{2015,
+   title={Searches for heavy long-lived charged particles with the ATLAS detector in proton-proton collisions at s = 8 $$ \sqrt{s}=8 $$ TeV},
+   volume={2015},
+   ISSN={1029-8479},
+   url={http://dx.doi.org/10.1007/JHEP01(2015)068},
+   DOI={10.1007/jhep01(2015)068},
+   number={1},
+   journal={Journal of High Energy Physics},
+   publisher={Springer Science and Business Media LLC},
+   collaboration = {The ATLAS Collaboration},
+   year={2015},
+   month={Jan} }
+
 
 @article {AR:04xx,
  author = {J. Huston,~ K. Rabbertz and G. Zanderighi},
@@ -209,7 +217,7 @@ detector in proton–proton collisions at √s = 8 TeV},
    number={3},
    journal={Physical Review D},
    publisher={American Physical Society (APS)},
-   author={Beane, S. R. and Chang, E. and Cohen, S. D. and Detmold, W. and Lin, H. W. and Luu, T. C. and Orginos, K. and Parreño, A. and Savage, M. J. and Walker-Loud, A.},
+   author={Beane {\it et al.}},
    year={2013},
    month={Feb} }
 
@@ -279,7 +287,7 @@ detector in proton–proton collisions at √s = 8 TeV},
  
 @article{AR:07,
   title = {CP-Violation in the Renormalizable Theory of Weak Interaction},
-  author = {Makoto Kobayashi, Toshihide Maskawa},
+  author = {Makoto Kobayashi and Toshihide Maskawa},
   journal = {Progress of Theoretical Physics},
   volume = {49},
   issue = {2},
@@ -326,26 +334,195 @@ url = {https://www.sciencedirect.com/science/article/pii/0370269380906668},
 author = {Edward Witten},
 }
  
-@article {AR:11,
- author = {L. Baudis and S. Profumo},
- title = {Dark Matter},
- journal = {Particle Data Group},
- year = {2021}
- }  
+@article{AR:11,
+   title={The distribution of dark matter in galaxies},
+   volume={27},
+   ISSN={1432-0754},
+   url={http://dx.doi.org/10.1007/s00159-018-0113-1},
+   DOI={10.1007/s00159-018-0113-1},
+   number={1},
+   journal={The Astronomy and Astrophysics Review},
+   publisher={Springer Science and Business Media LLC},
+   author={Salucci, Paolo},
+   year={2019},
+   month={Feb} }
 
-@article {AR:12,
+
+@article {AR:12xx,
  author = {B.C. Allanach and H.E. Haber},
  title = {Supersymmetry, Part I (Theory)},
  journal = {Particle Data Group},
  year = {2021}
  }  
+ 
+@article{AR:12,
+title = {Supersymmetry, supergravity and particle physics},
+journal = {Physics Reports},
+volume = {110},
+number = {1},
+pages = {1-162},
+year = {1984},
+issn = {0370-1573},
+doi = {https://doi.org/10.1016/0370-1573(84)90008-5},
+url = {https://www.sciencedirect.com/science/article/pii/0370157384900085},
+author = {H.P. Nilles},
+}
 
-@article {AR:13,
- author = {M. D’Onofrio and F. Moortgat},
- title = {Supersymmetry, Part II (Experiment)},
- journal = {Particle Data Group},
- year = {2021}
- }  
+@article{AR:12a,
+title = {All possible generators of supersymmetries of the S-matrix},
+journal = {Nuclear Physics B},
+volume = {88},
+number = {2},
+pages = {257-274},
+year = {1975},
+issn = {0550-3213},
+doi = {https://doi.org/10.1016/0550-3213(75)90279-5},
+url = {https://www.sciencedirect.com/science/article/pii/0550321375902795},
+}
+
+@article{AR:12b,
+title = {The search for supersymmetry: Probing physics beyond the standard model},
+journal = {Physics Reports},
+volume = {117},
+number = {2},
+pages = {75-263},
+year = {1985},
+issn = {0370-1573},
+doi = {https://doi.org/10.1016/0370-1573(85)90051-1},
+url = {https://www.sciencedirect.com/science/article/pii/0370157385900511},
+author = {H.E. Haber and G.L. Kane},
+}
+
+@article{AR:12c,
+   title={PeV-scale supersymmetry},
+   volume={71},
+   ISSN={1550-2368},
+   url={http://dx.doi.org/10.1103/PhysRevD.71.015013},
+   DOI={10.1103/physrevd.71.015013},
+   number={1},
+   journal={Physical Review D},
+   publisher={American Physical Society (APS)},
+   author={Wells, James D.},
+   year={2005},
+   month={Jan} }
+
+@article{AR:12d,
+title = {Supersymmetric technicolor},
+journal = {Nuclear Physics B},
+volume = {189},
+number = {3},
+pages = {575-593},
+year = {1981},
+issn = {0550-3213},
+doi = {https://doi.org/10.1016/0550-3213(81)90582-4},
+url = {https://www.sciencedirect.com/science/article/pii/0550321381905824},
+author = {Michael Dine and Willy Fischler and Mark Srednicki},
+}
+
+@article{AR:12e,
+title = {Theories with gauge-mediated supersymmetry breaking},
+journal = {Physics Reports},
+volume = {322},
+number = {6},
+pages = {419-499},
+year = {1999},
+issn = {0370-1573},
+doi = {https://doi.org/10.1016/S0370-1573(99)00042-3},
+url = {https://www.sciencedirect.com/science/article/pii/S0370157399000423},
+author = {G.F. Giudice and R. Rattazzi},
+}
+
+@article{AR:12f,
+   title={The two faces of anomaly mediation},
+   volume={2012},
+   ISSN={1029-8479},
+   url={http://dx.doi.org/10.1007/JHEP06(2012)151},
+   DOI={10.1007/jhep06(2012)151},
+   number={6},
+   journal={Journal of High Energy Physics},
+   publisher={Springer Science and Business Media LLC},
+   author={D’Eramo, Francesco and Thaler, Jesse and Thomas, Zachary},
+   year={2012},
+   month={Jun} }
+
+@article{AR:12g,
+   title={R-Parity-violating supersymmetry},
+   volume={420},
+   ISSN={0370-1573},
+   url={http://dx.doi.org/10.1016/j.physrep.2005.08.006},
+   DOI={10.1016/j.physrep.2005.08.006},
+   number={1-6},
+   journal={Physics Reports},
+   publisher={Elsevier BV},
+   author={Barbier, R. {\it{et al.}}},
+   year={2005},
+   month={Nov},
+   pages={1–195} }
+
+
+
+@article{AR:13a,
+   title={Search for long-lived particles using nonprompt jets and missing transverse momentum with proton-proton collisions at s=13TeV},
+   volume={797},
+   ISSN={0370-2693},
+   url={http://dx.doi.org/10.1016/j.physletb.2019.134876},
+   DOI={10.1016/j.physletb.2019.134876},
+   journal={Physics Letters B},
+   publisher={Elsevier BV},
+   author={Sirunyan, A.M. {\it et al.}},
+   year={2019},
+   month={Oct},
+   pages={134876} }
+   
+@article{AR:13b,
+   title={Search for natural and split supersymmetry in proton-proton collisions at $$ \sqrt{s}=13 $$ TeV in final states with jets and missing transverse momentum},
+   volume={2018},
+   ISSN={1029-8479},
+   url={http://dx.doi.org/10.1007/JHEP05(2018)025},
+   DOI={10.1007/jhep05(2018)025},
+   number={5},
+   journal={Journal of High Energy Physics},
+   publisher={Springer Science and Business Media LLC},
+   author={Sirunyan, A.M. {\it et al.}},
+   year={2018},
+   month={May} }
+
+@article{AR:13c,
+   title={Search for disappearing tracks in proton-proton collisions at s=13TeV},
+   volume={806},
+   ISSN={0370-2693},
+   url={http://dx.doi.org/10.1016/j.physletb.2020.135502},
+   DOI={10.1016/j.physletb.2020.135502},
+   journal={Physics Letters B},
+   publisher={Elsevier BV},
+   author={Sirunyan, A.M. {\it et al.}},
+   year={2020},
+   month={Jul},
+   pages={135502} }
+   
+@article{AR:13d,
+   title={Search for long-lived particles using displaced jets in proton-proton collisions at 
+s=13 TeV},
+   volume={104},
+   ISSN={2470-0029},
+   url={http://dx.doi.org/10.1103/PhysRevD.104.012015},
+   DOI={10.1103/physrevd.104.012015},
+   number={1},
+   journal={Physical Review D},
+   publisher={American Physical Society (APS)},
+   author={Sirunyan, A. M. {\it et al.}},
+   year={2021},
+   month={Jul} }
+
+@electronic{AR:13e,
+  title         = {Supersymmetry Physics Results, CMS experiment},
+  url           = {http://cms-results.web.cern.ch/
+cms-results/public-results/publications/SUS/index.html.}
+}
+
+
+
+
 
 @article {AR:14,
  author = {K. Ntekas},
@@ -356,11 +533,19 @@ experiment},
  year = {2016}
  }  
  
-@article {AR:15,
- title = {Operation of the ATLAS Trigger System in Run 2},
- journal = {JINST 15 (2020) 10, P10004},
- year = {2020}
- }  
+@article{AR:15,
+   title={Operation of the ATLAS trigger system in Run 2},
+   volume={15},
+   ISSN={1748-0221},
+   url={http://dx.doi.org/10.1088/1748-0221/15/10/P10004},
+   DOI={10.1088/1748-0221/15/10/p10004},
+   number={10},
+   journal={Journal of Instrumentation},
+   publisher={IOP Publishing},
+   author={collaboration, The ATLAS},
+   year={2020},
+   month={Oct},
+   pages={P10004–P10004} }
 
 @article {AR:16,
  author = {Vera C. Rubin, Jr. Ford et.al},
@@ -473,9 +658,15 @@ of high-luminosity spiral galaxies. IV. Systematic dynamical properties, Sa thro
   url           = {http://hsi.web.cern.ch/HSI/s-link/spec/spec/s-link.pdf}
 }
 
-@electronic{URL:21,
-  title         = {atlas/athena},
-  url           = {https://gitlab.cern.ch/atlas/athena}
+@software{URL:21,
+  author       = {ATLAS Collaboration},
+  title        = {Athena},
+  month        = apr,
+  year         = 2019,
+  publisher    = {Zenodo},
+  version      = {22.0.1},
+  doi          = {10.5281/zenodo.2641997},
+  url          = {https://doi.org/10.5281/zenodo.2641997}
 }
 
 @electronic{URL:22,
@@ -492,3 +683,11 @@ of high-luminosity spiral galaxies. IV. Systematic dynamical properties, Sa thro
   title         = {此のたびのミューオン異常磁気能率},
   url           = {http://www.jahep.org/hepnews/2021/40-2-2-g2.pdf}
 }
+
+@misc{kishimoto,
+   title={TGC TTCrx Timing Scan},
+   url={https://indico.cern.ch/event/433553/contributions/1916061/attachments/1126787/1608980/TgcPhaseScan.pdf},
+   author={Tomoe Kishimoto},
+   year={2015},
+   month={Jul}
+   }
