@@ -15,7 +15,7 @@ TGC~検出器における詳細なタイミング設定に関する理解を深�
 
 \figref{fig:bcid00}に、Run~2~の実験データおよびシミュレーションにおけるバンチ判定の分布の一例を示した。バンチ判定は、\subsubsecref{subsubsec:bcid}で示したように、前バンチ、前かつ基準バンチ、基準バンチ、基準かつ次バンチで識別される。シミュレーションと実験データの分布を比較すると、実験データの方がタイミングの揺らぎが大きく、特に基準かつ次バンチの割合が高いことが分かる。Run~3~の開始に向けて、トリガー判定を損失なく正確に行うには、より詳細なバンチ判定における議論が必要となる。また\secref{sec:latemu}で述べたように次バンチと判定される粒子も新物理探索において重要なファクターとなり、基準バンチのタイミングが正しく調整されていなければ、次バンチで測定される粒子の速度にもばらつきが生じることが考えられる。よって、本研究ではシミュレーションを用いてタイミングの検証を行い~TGC~検出器の詳細なタイミング較正を行う。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=0.75\textwidth,page=1]{img/pdf5/BCID0.pdf}
         \caption[Run~2~の実験データとモンテカルロシミュレーションにおけるバンチ判定の分布]{Run~2~の実験データとモンテカルロシミュレーションにおけるバンチ判定の分布。FI~T10~チェンバー、ワイヤーチャンネル。}
@@ -91,7 +91,7 @@ Run~2~の実験データにおいては、トリガーを通過した粒子の�
 $\it{N_{\rm{c}}},~\it{N_{\rm{c{\land}n}}},~\it{N_{\rm{n}}}$はそれぞれ基準バンチ、基準かつ次バンチ、次バンチの事象数を表している。
 \equref{eq:timing}を用いることで、基準バンチに対してどれだけタイミングが遅れているかを評価することができる。\figref{fig:timingex}に一例を示した。プロット点が~0~付近に位置しているほど、基準バンチで判定されている割合が多く理想的な状態であると言える。反対に、基準かつ次バンチ、もしくは次バンチの割合が多くなるほどパラメータの数値が大きくなり、タイミングの遅れが最大となるとプロット点が~1~となる。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=0.75\textwidth,page=21]{img/pdf5/master_timingplot_data.pdf}
         \caption[タイミングパラメータを用いた TGC 検出器の評価]{タイミングパラメータを用いた TGC 検出器の評価。M2~T08~チェンバー、ストリップチャンネル。数値が高いほど、タイミングが遅れていることを表す。}
@@ -106,7 +106,7 @@ $\it{N_{\rm{c}}},~\it{N_{\rm{c{\land}n}}},~\it{N_{\rm{n}}}$はそれぞれ基準
 ワイヤーおよびストリップで信号が伝搬するのち~ASD~で信号が検出されるまでには、センサーの端からチェンバーに沿って~ASD~に到達するまでの時間を考慮する必要がある。しかし、シミュレーションにおいてはタイミングに大きな影響はないと考えられ計算の実装が行われていなかった。したがってシミュレーションに新たに~ASD~の位置座標の情報を追加し伝搬時間の計算を実装した。
 \figref{fig:asd}に示したのは、ASD~までの信号伝搬時間を計算に実装した前後によるシミュレーションの比較である。ASD~までの伝搬時間を考慮したことにより、ASD~の位置から離れるほどタイミングに遅れが生じていることが分かる。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
     \begin{minipage}{0.49\hsize}
     \centering   
     \includegraphics[width=\textwidth,page=8]{img/plot/ASD.pdf}
@@ -126,21 +126,21 @@ $\it{N_{\rm{c}}},~\it{N_{\rm{c{\land}n}}},~\it{N_{\rm{n}}}$はそれぞれ基準
 
 \figref{fig:twist}は、ツイストケーブルの影響を計算に実装する前後のタイミングを比較したものである。実装以前は位置に依存した一定のタイミング変化になっているが、実装を行ったことにより~11~と~12~チャンネル、および~26~と~27~チャンネルの間に大きなタイミングの変化があることが分かる。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
     \centering   
     \includegraphics[width=0.8\textwidth,page=6]{img/slide/slide.pdf}
     \caption[シグナルケーブルの断面の概念図]{シグナルケーブルの断面の概念図~\cite{MT:04}。一つ一つの信号線はねじれるようにまとめられている。$\rm{1\sim11}$チャンネル~および$\rm{17\sim26~ch}$は断面の外側、$\rm{12\sim16}$チャンネル~および$\rm{27\sim32~}$チャンネルは断面の内側に配置されている。}
     \label{fig:twist0}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[tbp]
     \centering   
     \includegraphics[width=\textwidth,page=1]{img/photo/twistphoto.pdf}
     \caption[ATLAS~実験で実際に使用されたシグナルケーブルの写真]{ATLAS~実験で実際に使用されたシグナルケーブルの写真。左図はケーブルの内部構造、右図は信号線の読み出し口。読み出しはケーブルの内側と外側でそれぞれまとめられて行われる。}
     \label{fig:twist00}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[tbp]
     \begin{minipage}{0.49\hsize}
     \centering   
     \includegraphics[width=\textwidth,page=1]{img/plot/twist.pdf}
@@ -167,21 +167,21 @@ TGC~のセンサーにおいて信号が伝搬するに伴い信号の減衰が�
 
 シミュレーションの実装前後における比較を\figref{fig:att}に示す。大きな差は見られないが、傾きに少しの変化があることが確認できる。
 
-%\begin{figure}[H]
+%\begin{figure}[tbp]
 %    \centering   
 %    \includegraphics[width=\textwidth,page=5]{img/slide/slide.pdf}
 %    \caption[ケーブルの長さに依存した信号減衰の様子]{ケーブルの長さに依存した信号減衰の様子~\cite{URL:04}。下側は~PP~ASIC~が作ったテストパルスが~ASD~に届いた際の信号のアナログ出力を観測したもの。上側がテストパルスを受けて作られた~LVDS~がケーブルを伝搬し~PP~に届いた際の様子を観測したもの。ケーブル長が~2.8~m~の場合~(左図)~。ケーブル長が~47.3~m~の場合~(右図)~。}
 %    \label{fig:att2}
 %\end{figure}
 
-\begin{figure}[H]
+\begin{figure}[tbp]
     \centering   
     \includegraphics[width=0.7\textwidth,page=1]{img/plot/attk.pdf}
     \caption[信号減衰によるタイミングの遅れの実測値と近似式]{信号減衰によるタイミングの遅れの実測値と近似式~\cite{MT:04}。}
     \label{fig:att0}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[tbp]
     \centering   
     \includegraphics[width=0.7\textwidth,page=1]{img/plot/att.pdf}
     \caption[信号減衰の影響の実装によるタイミングの評価]{信号減衰の影響の実装によるタイミングの評価。赤は、信号減衰の影響が未実装、青は、信号減衰の影響が実装されたシミュレーション。また両者には、ASD~までの信号伝搬の影響は実装済みである。FI~T10~チェンバー、ワイヤーチャンネル。}
@@ -215,7 +215,7 @@ ASD の配置は各チェンバーによって異なっている。ASD 配置の
 
 また、ほかのチェンバーのタイミング較正についての詳細は、\appendixref{app:app1}に示す。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
 	\begin{minipage}{0.49\hsize}
 	\centering
 	\includegraphics[width=\textwidth,page=10]{img/pdf5/master_timingplot_comp.pdf}
@@ -230,7 +230,7 @@ ASD の配置は各チェンバーによって異なっている。ASD 配置の
 	\label{fig:timingPlotBW}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[tbp]
 	\begin{minipage}{0.49\hsize}
 	\centering			
 	\includegraphics[width=\textwidth,page=36]{img/pdf5/master_timingplot_comp.pdf}
@@ -319,7 +319,7 @@ $N_{\mu}(\rm{hit^{L2}\land hit^{L1}_c)}$は基準バンチにおけるミュー�
 
 以上の結果から、TGC~検出器におけるタイミング調整がヒット効率へ影響を与えることを示唆することができた。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
 	\begin{minipage}{0.49\hsize}
 	\centering
 	\includegraphics[width=\textwidth,page=1]{img/plot/hit_eff_orin.pdf}
@@ -352,13 +352,13 @@ $N_{\mu}(\rm{hit^{L2}\land hit^{L1}_c)}$は基準バンチにおけるミュー�
 見られないことが確認できた。
 
 また、\figref{fig:singletriep}は、$\eta,~\phi$方向に区分したミューオンに対するシングルミューオントリガーのトリガー効率を示している。シミュレーションにおいては大きな変化は見られないが、実験データに関してはシミュレーションに比べると効率の低下が大きい部分が一部に観察できる。これは、デッドチェンバーにおける非効率が由来していると考えられる。
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=\textwidth,page=1]{img/rec/trig.pdf}
         \caption[シングルミューオントリガーにおけるミューオンのトリガー効率の比較]{シングルミューオントリガーにおけるミューオンのトリガー効率の比較。20~GeV~の横運動量閾値。左図の青は較正前のシミュレーション、緑は較正後のシミュレーションを表す。右図の緑は較正後のシミュレーション、橙はRun~2~のデータを示す。}\label{fig:singletri}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=\textwidth,page=1]{img/rec/tri1.pdf}
         \caption[$\eta, \phi$方向から見たシングルミューオントリガーにおけるトリガー効率の比較]{$\eta,~\phi$方向から見たシングルミューオントリガーにおけるトリガー効率の比較。左図は較正前のシミュレーション。中図は較正後のシミュレーション。右図は、Run~2~の実験データ。}\label{fig:singletriep}
@@ -375,7 +375,7 @@ $N_{\mu}(\rm{hit^{L2}\land hit^{L1}_c)}$は基準バンチにおけるミュー�
 
 タイミングの最適化を行う上で、もっとも重要なことはバンチ判定が、前バンチあるいは次バンチに判定されないようにし、光速のミューオンが基準バンチで最大限に読み出されるような調整を行うことである。\figref{fig:fitune}において以上のような条件を満たすには、もともとの実装状態に対し$4\sim5\rm{ns}$の遅延を加えることが最適であると考えられる。実験においては、PP~ASIC~での遅延を$4\sim5~\rm{ns}$増加させることに対応する。
 FI~T10~チェンバーにおける以上のタイミング調整は、実験に使用されるオンラインパラメータへの実装を行った。
-\begin{figure}[H]
+\begin{figure}[tbp]
     \centering   
     \includegraphics[width=0.8\textwidth,page=1]{img/plot/FItune.pdf}
     \caption[FI T10 チェンバーにおける遅延パラメータの調整]{FI~T10~チェンバーにおける遅延パラメータの調整。タイミング較正後のシミュレーション~(0~ns)~から、遅延パラメータを~1~ns~ずつ遅らせた場合のふるまいを示している。}

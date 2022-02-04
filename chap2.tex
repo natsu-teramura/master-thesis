@@ -25,13 +25,6 @@ Run~1は2010~年から2012~年まで行われた。その後、2013~年から201
 \end{align}
 となる。
 観測されるデータ量は$L_{\rm{int}}$に比例し、単位には$\rm{fb}^{-1}$が用いられる。
-
-\begin{figure}[H]
-        \centering   
-        \includegraphics[width=0.8\textwidth]{img/jpeg/lhclhc.pdf}
-        \caption[LHC 加速器の全体像]{LHC~加速器の全体像~\cite{URL:01}。LHC~並びに~LHC~の前段加速器の詳細を示している。LHC~には、ATLAS,~ALICE,~CMS,~LHCb~の~4~つの検出器が設置されている。}\label{fig:lhc}
-\end{figure}
-
 \begin{table}[tb]
 	\centering
 	\begin{tabular}{c|cccc}\hline
@@ -44,15 +37,19 @@ Run~1は2010~年から2012~年まで行われた。その後、2013~年から201
 	\end{tabular}
 	\caption[LHC の各運転における詳細]{LHC~の各運転における詳細~\cite{URL:18,URL:17}。Run~3~以降については現在予定されている設定値を記している。積算ルミノシティは~LHC~で供給されるビームに基づいて計算している。}
     \label{tb:LHC}
-\end{table}
-
+\end{table} 
+\begin{figure}[tbp]
+        \centering   
+        \includegraphics[width=0.8\textwidth]{img/jpeg/lhclhc.pdf}
+        \caption[LHC 加速器の全体像]{LHC~加速器の全体像~\cite{URL:01}。LHC~並びに~LHC~の前段加速器の詳細を示している。LHC~には、ATLAS,~ALICE,~CMS,~LHCb~の~4~つの検出器が設置されている。}\label{fig:lhc}
+\end{figure}
 \section{ATLAS~実験}
 ATLAS~実験は~LHC~の衝突点に設置された~ATLAS~検出器を用いて陽子陽子衝突から~TeV~スケールまでの高エネルギー物理事象の探索を行う実験である。2012~年には、同じ~LHC~の~CMS~実験と共にヒッグス粒子を発見し、標準理論の完成に向けて大きく貢献した~\cite{TR:03,TR:03a}。
 本節では、ATLAS~実験の詳細について記していく。
 \subsection{ATLAS~検出器}
 ATLAS~検出器は、直径~22~m、長さ~44~m~の円筒形で、総重量は~7000~t~という大型汎用検出器である。\figref{fig:atlasdet}に~ATLAS~検出器の全体図を示した。検出器は内側から内部飛跡検出器、電磁カロリメータ、ハドロンカロリメータ、ミューオン検出器という構成になっており、検出器の間には粒子を曲げるための超電導マグネットが設置されている。検出器は広範囲をカバーし、多様な検出器を組み合わせて利用することで高頻度の事象を逃すことなく処理するシステムが構築されている。\figref{fig:disp}は、衝突点より生成された粒子の各検出器における反応の様子を示したイベントディスプレイである。それぞれの検出器の特性をもとに各検出器で様々な粒子の識別を行う。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
     \centering   
     \includegraphics[width=0.9\textwidth,page=1]{img/pdf/ATLAS.pdf}
     \caption[ATLAS 検出器の全体図]{ATLAS 検出器の全体図~\cite{TR:01}。直径~25~m,~長さ~44~m,~重さ~7000~t~の大型汎用検出器。}\label{fig:atlasdet}
@@ -79,7 +76,7 @@ $|\eta| < 1.05$をバレル領域、円筒型の底面部にあたる$|\eta| > 1
 
 粒子のエネルギーや運動量を表す際には、ビーム軸に垂直な成分である横方向エネルギー~($E_{\rm{T}}$)、横方向運動量~($p_{\rm{T}}$)~を利用する。陽子陽子衝突実験において、衝突するクォークやグルーオンの$z$軸方向のエネルギー・運動量には陽子内のパートン分布により不定のため保存則を用いることはできない。一方で、ビーム軸に垂直な方向にはエネルギーおよび運動量の保存則が成立する。従って$E_{\rm{T}}$や$p_{\rm{T}}$は解析において利用されることが多い。またビーム軸に垂直な方向成分の保存則を用いると、ニュートリノ等の~ATLAS~検出器で観測できなかった粒子によるエネルギーの~2~次元のベクトル和を得ることができる。この見えないエネルギーの和を消失横方向エネルギー~(Missing-$E_{\rm{T}}$:~MET)~と呼ぶ。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
     \centering  
     \includegraphics[width=\textwidth,page=1]{img/pdf/cood.pdf}
     \caption[ATLAS~実験において使用される座標系]{ATLAS~実験において使用される座標系。$x,~y,~z$方向に設定される直交座標系と$R,~\phi,~\theta$で定義される極座標系がある。$\theta$方向を表す量として、擬ラピディティ$\eta$が利用される。$\eta>0$を~A-Side、$\eta<0$を~C-Side~と呼ぶ。}\label{fig:cood}
@@ -88,7 +85,7 @@ $|\eta| < 1.05$をバレル領域、円筒型の底面部にあたる$|\eta| > 1
 \subsection{超伝導マグネット}
 ATLAS~は~3~種類の巨大な超電導磁石により構成されている。\figref{fig:mag}に~ATLAS~検出器における超伝導マグネットの構成を示した。一つは中央のソレノイド磁石であり内部検出器の運動量測定に用いられる。流れる電流は~7.73~kA~で、発生する磁場は約~2~T~である。その周りを囲むバレル領域のトロイド磁石は、八回対称のリングで構成されており、円周方向の磁場を生成する。エンドキャップ領域のトロイド磁石も同様に円周方向の磁場を生成する。これらのトロイド磁石はミューオンの運動量を測定するために利用されている。流れる電流は~20.5~kA~で、発生する磁場は約~4~T~である。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=0.75\textwidth,page=5]{img/pdf/ATLAS.pdf}
         \caption[ATLAS~検出器における超伝導磁石の構成]{ATLAS~検出器における超伝導磁石の構成~\cite{TR:01}。衝突点付近のソレノイド磁石と外側のトロイド磁石で構成されている。トロイド磁場はエンドキャップ領域、バレル領域それぞれにおいて八回対称になるように設定されている。}\label{fig:mag}
@@ -100,7 +97,7 @@ ATLAS~は~3~種類の巨大な超電導磁石により構成されている。\f
 ~Pixel~は、最内層にある半導体検出器であり、高い位置分解能を持つ。SCT~はマイクロストリップと呼ばれる細長い有感領域をシリコン上に施した半導体検出器である。そして~TRT~は半径~4~mm~のチューブ型検出器であり、トラッキングのほかに遷移輻射を利用した電子の同定も行っている。
 以上の内部飛跡検出器は、いずれもビーム衝突点に近く非常に厳しい放射線環境下にさらされるため、高い放射線耐性が必要不可欠である。\figref{fig:innr}に内部飛跡検出器の概略を示す。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
     \centering   
     \includegraphics[width=0.8\textwidth,page=1]{img/jpeg/id.pdf}
     \caption[ATLAS~検出器における内部飛跡検出器の構成]{ATLAS~検出器における内部飛跡検出器の構成~\cite{URL:19}。内側から順に~Pixel,~SCT,~TRT~検出器が設置されている。}\label{fig:innr}
@@ -110,7 +107,7 @@ ATLAS~は~3~種類の巨大な超電導磁石により構成されている。\f
 カロリメータの主な役割は、電子やガンマ線、ジェット等のエネルギーおよび角度の測定である。ATLAS~実験に使用される~4~種類のカロリメータは、電磁カロリメータとハドロンカロリメータの~2~つのいずれかに区分され、広範囲をカバーしている。\figref{fig:calo}にカロリメータの構成を示す。
 以下では、それぞれのカロリメータについて簡単に説明する。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=0.8\textwidth,page=3]{img/pdf/ATLAS.pdf}
         \caption[ATLAS~検出器におけるカロリメータの構成]{ATLAS~検出器におけるカロリメータの構成~\cite{TR:01}。電磁カロリメータは、バレル領域およびエンドキャップ領域の~2~種類。ハドロンカロリメータは、バレル領域のタイル、エンドキャップ領域、フォワード領域の液体アルゴンカロリメータの~3~種類。}\label{fig:calo}
@@ -155,34 +152,24 @@ MDT~はバレル領域とエンドキャップ領域の両方に設置され、�
 
 超電導トロイダル磁石は、バレル領域およびエンドキャップ領域にそれぞれ$\phi$方向の磁場を生成している。$\phi$方向の磁場によって$R-z$平面内で曲げられたミューオンの曲率を測定することで運動量を決定する。理想的にはミューオンは$R-z$平面内で曲がるが、実際は磁場の大きさが一様でないため$\phi$方向にも曲がる。トリガー用の~2~つの検出器~(RPC,~TGC)~は、$\phi$方向の座標を測る役割も担っている。
 
-
-
-
-
 \subsubsection{Run~3~におけるミューオン検出器のアップグレード}
 初段ミューオンエンドキャップトリガーでは、\figref{fig:tgc000}で示したようなビームパイプから発生した陽子などの低速粒子による影響が課題となっていた。これらの粒子が高い$p_{\rm{T}}$を持つミューオンと同じ角度で入射した場合、誤ってトリガーを発行してしまう。2012~年に取得した~Run~1~の解析結果によると、初段エンドキャップミューオントリガーで出力されたうちの約$90\%$がフェイクであった~\cite{TR:05}。その後の~Run~2~では、エンドキャップトロイドマグネットの内側に設置されたタイルカロリメータおよび~TGC~EIFI~とのコインシデンスを導入した。このようなインナーコインシデンスを要求することで、$1.05<|\eta|<1.7$の領域におけるフェイクトリガーの削減に成功している。
 
-$1.92<|\eta|<2.4$の領域ではインナーコインシデンスを行うための検出器が設置されていないため、フェイクトリガーが多く残っており、$1.05<|\eta|<1.92$の領域においてもフェイク削減の余地は残っている。そこで~Run~3~においてはさらなるフェイクトリガーの削減を目指し、トロイド磁場領域の内側に~New~Small~Wheel~(NSW)~および~RPC~Barrel~Inner~Small~sector~78~(RPC~BIS78)~の~2~つの検出器を新たに導入する。\figref{fig:innercoin}に示すように、Run~3~では~2~つの検出器の導入でさらなるフェイクトリガーの削減が可能であることが見積もられている。Run~3~における~新検出器導入後の~ATLAS~検出器の断面図を\figref{fig:cut3}に示した。
-
-\figref{fig:nsw}に~NSW~の構成を示す。NSW~は$1.3<|\eta|<2.7$の領域をカバーするガス検出器である。NSW~は、Run~2~で使用されていた~TGC~FI、MDT~EIL~チェンバー、CSC~と入れ替わる形で導入される。したがって、NSW~は~TGC~FI~が担っていたミューオントリガーの役割および~MDT~と~CSC~が担っていた飛跡の精密測定の役割を果たすこととなる。そのため、NSW~は~small-strip~TGC~(sTGC)~と~Micromegas~(MM)~という二つの異なる技術の検出器で構成されている。NSW~を導入することでインナーコインシデンスの領域が$|\eta|<2.4$まで拡張される。
-
-また\figref{fig:bis}に~RPC~BIS78~の構成を示す。Run~3~ではより高精度な測定を行うために~RPC~および~small-diameter~MDT~(sMDT)~を組み合わせた~RPC~BIS78~を新たに設置する。RPC~BIS78~は$1.0<|\eta|<1.3$の領域をカバーし、3~層のガス層で構成される。ガス層の厚みは約1~mmで、従来の~RPC~の半分になっている。ガス層は従来の~RPC~と同様に~2~次元方向のストリップで$\eta,~\phi$方向が測定できる。
-
-\begin{figure}[H]
+$1.92<|\eta|<2.4$の領域ではインナーコインシデンスを行うための検出器が設置されていないため、フェイクトリガーが多く残っており、$1.05<|\eta|<1.92$の領域においてもフェイク削減の余地は残っている。そこで~Run~3~においてはさらなるフェイクトリガーの削減を目指し、トロイド磁場領域の内側に~New~Small~Wheel~(NSW)~および~RPC~Barrel~Inner~Small~sector~78~(RPC~BIS78)~の~2~つの検出器を新たに導入する。\figref{fig:innercoin}に示すように、Run~3~では~2~つの検出器の導入でさらなるフェイクトリガーの削減が可能であることが見積もられている。Run~3~における~新検出器導入後の~ATLAS~検出器の断面図を\figref{fig:cut3}に示す。
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=0.7\textwidth,page=1]{img/pdf/inner.pdf}
         \caption[インナーコインシデンスによるフェイクトリガーの削減]{インナーコインシデンスによるフェイクトリガーの削減~\cite{shiomi}。Run~3~における初段ミューオントリガーを用いて選出したミューオン候補数の$\eta$分布の予測。タイル、RPC~BIS78~および~NSW~によって削減できるミューオン候補の数を示している。}
         \label{fig:innercoin}
 \end{figure}
-
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=0.8\textwidth,page=1]{img/pdf/ch01_fig_03a.pdf}
         \caption[NSW~および~RPC~BIS78~が導入された~Run~3~における~ATLAS~検出器断面図]{NSW~および~RPC~BIS78~が導入された~Run~3~における~ATLAS~検出器断面図~\cite{TR:04}。}
         \label{fig:cut3}
 \end{figure}
-
-\begin{figure}[H]
+\figref{fig:nsw}に~NSW~の構成を示す。
+\begin{figure}[tbp]
     \begin{minipage}{0.49\hsize}
 	\centering			
 	\includegraphics[width=\textwidth,page=1]{img/pdf/fig_026c.png}
@@ -196,13 +183,16 @@ $1.92<|\eta|<2.4$の領域ではインナーコインシデンスを行うため
     \caption[New~Small~Wheel~の構成]{New~Small~Wheel~の構成~\cite{AR:14}。4~層の~sTGC~の間に、4~層の~MM~が~2~台挟まれる構造となっている。(a)~チェンバーの全体図。(b)~NSW~の構成。}
     \label{fig:nsw}
 \end{figure}
+NSW~は$1.3<|\eta|<2.7$の領域をカバーするガス検出器である。NSW~は、Run~2~で使用されていた~TGC~FI、MDT~EIL~チェンバー、CSC~と入れ替わる形で導入される。したがって、NSW~は~TGC~FI~が担っていたミューオントリガーの役割および~MDT~と~CSC~が担っていた飛跡の精密測定の役割を果たすこととなる。そのため、NSW~は~small-strip~TGC~(sTGC)~と~Micromegas~(MM)~という二つの異なる技術の検出器で構成されている。NSW~を導入することでインナーコインシデンスの領域が$|\eta|<2.4$まで拡張される。
 
-\begin{figure}[H]
+\figref{fig:bis}に~RPC~BIS78~の構成を示す。
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=0.8\textwidth,page=1]{img/pdf/bis.pdf}
         \caption[RPC~BIS78~の構成]{BIS78~の構成~\cite{TR:04}。RPC~および~sMDT~で構成される。}
         \label{fig:bis}
 \end{figure}
+Run~3~ではより高精度な測定を行うために~RPC~および~small-diameter~MDT~(sMDT)~を組み合わせた~RPC~BIS78~を新たに設置する。RPC~BIS78~は$1.0<|\eta|<1.3$の領域をカバーし、3~層のガス層で構成される。ガス層の厚みは約1~mmで、従来の~RPC~の半分になっている。ガス層は従来の~RPC~と同様に~2~次元方向のストリップで$\eta,~\phi$方向が測定できる。
 
 \section{ATLAS~トリガーシステム}\label{sec:ttri}
 LHC~での陽子陽子衝突から生成される粒子は~ATLAS~のトリガーシステムを介して選別される。
@@ -211,8 +201,7 @@ ATLAS~実験では、陽子がクォークとグルーオンとの複合粒子�
 ATLAS~実験の高頻度~(40~MHz)~陽子バンチ衝突に対して、最終的にデータとしての記録を許容できるイベントレートは数~kHz~である。この制限を満たし効率よくトリガーを行うために、ATLAS~実験ではハードウェアベースの初段トリガー~(Level-1~Trigger:~L1)~とソフトウェアベースの後段トリガー~(High-Level~Trigger:~HLT)~の二段階で実装されている。
 \figref{fig:trigger}において、ATLAS 実験におけるトリガーと読み出し処理の流れについて示す。
 本節では、ATLAS~実験におけるトリガーシステムについて詳しく説明する。
-
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
             \includegraphics[width=\textwidth,page=2]{img/pdf/tdaq-run3-schematic-withoutFTK.pdf}
         \caption[Run~3~における~ATLAS~トリガーシステムの流れ]{Run~3~における~ATLAS~トリガーシステムの流れ~\cite{URL:07}。L1~では$2.5~\mu\rm{s}$以内にイベントレートを$100~\rm{kHz}$にまで削減する。L1~には~L1Calo,~L1Muon,~L1Topo~の~3~種類が存在する。HLT~ではソフトウェアベースでより詳細にトリガーを行い、数秒以内にイベントレートを数~kHz~にまで削減する。}\label{fig:trigger}
@@ -222,7 +211,7 @@ ATLAS~実験の高頻度~(40~MHz)~陽子バンチ衝突に対して、最終的�
 \subsubsection{初段トリガーでの処理の流れ}
 初段トリガー~(L1)~におけるデータ処理の流れについて説明する。
 \figref{fig:pipe}に~L1~における情報処理の流れを示す。
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=0.95\textwidth,page=1]{img/pdf/pipe.pdf}
         \caption[L1~におけるトリガーシステムの詳細]{L1~におけるトリガーシステムの詳細。40~MHz~での検出器からの情報は~L1~バッファに一時的に保持され、L1~トリガーでの信号の出力を受けたのち、順番に~ROD~へと送信される。}\label{fig:pipe}

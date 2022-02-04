@@ -11,13 +11,13 @@ TGC~は、動作ガスとして$\rm{CO_2}$/n-Pentane~(55:45)~を使用してい�
 また電子雪崩によって生じた励起分子やイオン再結合により発生する紫外線は、カソード面やガスに衝突して発生する二次電子によって放電を起こす可能性がある。したがって紫外線を吸収する効果~(クエンチ効果)~のある~n-Pentane~を封入している。
 \figref{fig:tgc2d}に~TGC~の信号読み出しの概念図、\figref{fig:TGCpri}に~TGC~検出器の詳細な構成を示した。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=0.6\textwidth,page=1]{img/pdf/tgc2d.pdf}
         \caption[TGC~二次元信号読み出しの概念図]{TGC~二次元信号読み出しの概念図。ワイヤーで$R$方向を測定し、ストリップで$\phi$方向を測定する。}\label{fig:tgc2d}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=\textwidth,page=10]{img/pdf/ATLAS.pdf}
         \caption[TGC~検出器の~triplet~および~doublet~における断面図]{TGC~検出器の~triplet~および~doublet~における断面図~\cite{TR:01}。}\label{fig:TGCpri}
@@ -29,7 +29,7 @@ ATLAS~実験で使用されている~TGC~検出器はエンドキャップ部に
 TGC~検出器は大きくエンドキャップマグネットの外側に位置する~Big~Wheel~と内側に位置する~Small~Wheel~に分けられる。
 Big~Wheel~は、M1~(3~層)、M2~(2~層)、M3~(2~層)~の計~7~層で構成されており、トリガー判定には主に以上の7層が利用されている。Small~Wheel~は、EIFI~(2~層)~で構成されており、フェイクミューオンの誤ったトリガーの削減等の役割を持つ。以下では、TGC~検出器それぞれの役割や配置等の詳細について述べる。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
     \centering   
     \includegraphics[width=0.75\textwidth,page=15]{img/pdf/ATLAS.pdf}
     \caption[TGC 検出器のビーム軸方向から見た全体写真]{TGC~検出器のビーム軸方向から見た全体写真~\cite{TR:01}。写真は~BW~の~M1~ステーション。}\label{fig:tgc00}
@@ -41,7 +41,7 @@ Big~Wheel~は$1.05<|\eta|<2.7$の領域をカバーし、$|\eta|<1.9$の領域�
 
 Big~Wheel~は~TGC~を$\phi$方向に~12~等分した~1/12~円を一つの大きな単位としており、これを~1/12~セクターと呼ぶ。データ処理などはこの単位で行われ、1/12~セクターはさらに$\phi$方向にエンドキャップで~4~等分、フォワードで~2~等分され、それぞれをトリガーセクターと呼ぶ。さらにトリガーセクターはエンドキャップ領域では$\eta$方向~37~分割、$\phi$方向に4分割、フォワード領域では$\eta$方向に16分割、$\phi$方向に4分割され、それぞれをサブセクターと呼ぶ。サブセクターは~8~ワイヤグループと~8~ストリップに対応しており、トリガー処理の最小単位となっている。運動量の概算に利用される~RoI~はサブセクターにおいて番号付けされる。\figref{fig:tgcsector}にセクターと~RoI~の番号付けの詳細を示した。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
 		\begin{minipage}{0.49\hsize}
 		\centering
         \includegraphics[width=\textwidth,page=2]{img/pdf/TGC.pdf}
@@ -54,7 +54,7 @@ Big~Wheel~は~TGC~を$\phi$方向に~12~等分した~1/12~円を一つの大き�
         \label{fig:tgcBW}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=0.8\textwidth,page=8]{img/pdf/TGC.pdf}
         \caption[トリガーセクターと~RoI~の番号付け]{相互作用頂点から見た~A-Side~のトリガーセクターと~RoI~の番号付け~\cite{TR:02}。$\phi,~\eta$方向に~RoI~の番号が振り分けられている。}
@@ -64,7 +64,7 @@ Big~Wheel~は~TGC~を$\phi$方向に~12~等分した~1/12~円を一つの大き�
 \subsection{Small~Wheel}
 Small~Wheel~は~EIFI~チェンバーで構成されており、$1.05<|\eta|<1.9$の領域をカバーしている。\figref{fig:tgcSW}に~TGC~EIFI~の配置図を示した。Big~Wheel~とは異なる特徴的な配置となっている。特に~EI~チェンバーが特徴的で所々に隙間が存在する構成になっている。これはバレル部分のトロイドマグネットの配置の影響によるものである。EI~チェンバーがあるセクターをラージセクター、ないセクターをスモールセクターと呼ぶ。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=0.9\textwidth,page=4]{img/pdf/TGC.pdf}
         \caption[TGC 検出器~Small~Wheel~EIFI~ステーションの配置図]{TGC~検出器~Small~Wheel~EIFI~ステーションの配置図。内側が~FI~T10~チェンバー、外側が~EI~T11~チェンバー。EI~は支持構造との干渉を避けるため~8~箇所の隙間が存在する。C-Side~(左)、A-Side~(右)~\cite{TR:02}}
@@ -110,7 +110,7 @@ doublet~の場合、ワイヤーとストリップの両方が、フロントエ
 チャンネル~1~は、ワイヤーの~ASD~ボックスの側面に最も近い。したがって、初期相互作用点に座って検出器のホイールを観察している観察者にとって、ストリップの読み出しは、後方検出器の場合は時計回りに、前方検出器の場合は反時計回りに進む。
 \end{itemize}
 
-\begin{figure}[H]
+\begin{figure}[tbp]
 		\begin{minipage}{0.49\hsize}
 		\centering
         \includegraphics[width=0.9\textwidth]{img/pdf/u08f1i.pdf}
@@ -174,14 +174,14 @@ TGC~セグメンテーションは以下の通りである。
 
 また、エンドキャップトロイド磁石よりも衝突点に近い側に位置する~EIFI~とのコインシデンスを取ることで、衝突点から飛来したミューオンに対して選択的にトリガーを行なっている。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=\textwidth,page=13]{img/pdf/ATLAS.pdf}
         \caption[初段エンドキャップミューオントリガーにおけるミューオンの飛来の様子と~RoI~の詳細]{初段エンドキャップミューオントリガーにおけるミューオンの飛来の様子と~RoI~の詳細~\cite{TR:01}。左図は~TGC~検出器の断面図であり、ミューオンの$p_{\rm{T}}$の大きさによるふるまいの違いを示している。右図は~TGC~のトリガーセクターと~RoI~を表しており、緑の線で囲まれた部分が~1~トリガーセクターを示す。赤で囲まれた部分が~1~RoI~を表す。}
         \label{fig:tgcpt}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=0.9\textwidth,page=1]{img/pdf/pttgc.pdf}
         \caption[TGC~BW~におけるミューオンの運動量概算の概念図]{TGC~BW~におけるミューオンの運動量概算の概念図~\cite{MT:03}。ミューオンが残すヒット点と直線飛跡との$R,~\phi$方向との差からミューオンの横運動量を概算する。}
@@ -217,7 +217,7 @@ TGC~システムの電気回路系におけるデジタル電気回路の設置�
 \end{itemize}
 次節以降にこれらの詳細について記す。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=0.9\textwidth,page=14]{img/pdf/ATLAS.pdf}
         \caption[TGC システム電気回路系におけるトリガーとリードアウトチェーンの流れ]{TGC~システム電気回路系におけるトリガーとリードアウトチェーンの流れ~\cite{TR:01}。TGC~のフロントエンドにあるエレクトロニクスによって~TGC~BW~の~ワイヤー~($R$)、ストリップ~($\phi$)~のそれぞれでコインシデンスがとられたのち、バックエンドにある~セクターロジックボードによって、ワイヤー、ストリップ間コインシデンスおよび~TGC~EIFI~とタイルカロリメータとのコインシデンスがとられる。}
@@ -229,7 +229,7 @@ TGC~システムの電気回路系におけるデジタル電気回路の設置�
 \label{subsubsec:ASD}
 ASD~は~TGC~検出器のセンサー~(ワイヤー、ストリップ)~からの生の電流信号を電圧信号に変換し、増幅されたのちにコンパレータにかけられ~LVDS~レベルの信号~(作動信号)~を出力する役割を持つ。出力信号は~Patch-Panel~に届けられる。ASD~ボードは各チェンバーに対して共通した作りになっており、4~チャンネルの信号を処理できるチップが~4~枚搭載されている。したがって~ASD~ボード一つ当たり~16~チャンネルの信号処理が可能となっている。ASD~はチャージアンプである前段増幅器~(電圧変換効率はピークで~0.8~V/pC)、利得~7~倍の作動電圧増幅回路、コンフィギュレーション可能な閾値電圧とのコンパレータからなる。作動電圧増幅回路の出力が閾値電圧を超えている時間だけのパルス長で~LVDS~のデジタルパルスが出力される。\figref{fig:ASD}に~ASD~チップの詳細を示す。また\figref{fig:signal}にASD~における信号波形シミュレーションの結果を示す。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
 		\begin{minipage}{0.49\hsize}
 		\centering
         \includegraphics[width=0.8\textwidth,page=3]{img/pdf/ASD.pdf}
@@ -243,7 +243,7 @@ ASD~は~TGC~検出器のセンサー~(ワイヤー、ストリップ)~からの�
         \caption[ASD~チップの詳細]{(a)~4~チャンネル~ASD~チップの写真~\cite{URL:06}。サイズは、$3.1~\rm{mm}~\times~3.1~\rm{mm}$。(b)~ASD~IC~チップにおけるピンアサインメント~\cite{URL:06}。}\label{fig:ASD}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=0.9\textwidth,page=2]{img/pdf/ASD.pdf}
         \caption[ASD~の信号波形シミュレーション]{ASD~の信号波形シミュレーション~\cite{URL:06}。左図は$\rm{-0.5\sim-0.1}~\rm{pC}$の差動信号入力、右図は$\rm{0.1\sim0.5}~\rm{pC}$の差動信号入力である。上図はプリアンプ出力、中図は~2~つのメインアンプ差動出力信号、下図は~2~つのコンパレータ差動出力信号~(LVDS)~である。}
@@ -256,7 +256,7 @@ PS-Board~には~Patch-Panel~ASIC~と~Slave~Board~ASIC~が搭載されている�
 \subsubsection{Patch-Panel~ASIC}
 Patch-Panel~ASIC~(PP)~は~ASD~が出力した~LVDS~信号を受けて、入力信号のタイミングを揃えたのち~40~MHz~のクロックでサンプリングを行う。\figref{fig:PPphoto}に~PP~の写真を示す。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=0.5\textwidth,page=2]{img/pdf/PP.pdf}
         \caption[PP ASIC の写真]{PP ASIC の写真~\cite{URL:05}。サイズは$5~\rm{mm}~\times~5~\rm{mm}$。}
@@ -270,14 +270,14 @@ PP~は~2~つの独立なパート~Port-A、Port-B~に分けられており、そ
 
 Fine~Delay~のあとに、Mask~とゲート回路が搭載されている。
 Mask~は信号のタイミングを揃えるために出力を制限する場合や、信号のノイズが大きい等の不良が発生する場合、後段への信号送信をチャンネル毎に制御することができる機能である。\figref{fig:PP}に~PP~ASIC~における信号処理の流れを示した。
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=0.65\textwidth,page=1]{img/slide/slide.pdf}
         \caption[信号タイミング調整の概念図]{信号タイミング調整の概念図~\cite{URL:09}。ケーブル~1,~2,~3~における入力タイミングの確率分布を示している。タイミング調整はケーブル単位で可能であり、一番遅く到達する時間に合わせる。}
         \label{fig:delay}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=\textwidth,page=1]{img/pdf/PP.pdf}
         \caption[PP ASIC での信号処理の流れ]
@@ -292,19 +292,19 @@ TGC~出力信号は内在的な時間の揺らぎの影響で陽子衝突間隔~
 
 以上の要領で設定された電子回路によりバンチ交差識別を行う。バンチ判定は\figref{fig:bcid0}のような概念図として表すことができる。25~ns~おきの~LHC~クロックに対して、前バンチ、基準バンチおよび次バンチのゲートが設定されている状態である。そして\tbref{tb:BCIDGate}に示したようにゲート幅は、25~ns~よりも大きな幅がとられている。これはゲートに重なりを持たせることで不定性の削減を行うためである。したがって~TGC~におけるバンチ判定は、前バンチ、前かつ基準バンチ、基準バンチ、基準かつ次バンチ、次バンチの~5~段階で行われる。光速のミューオンは信号の時間的揺らぎを考慮した上で基準バンチで判定されるように調整されている。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=0.8\textwidth,page=2]{img/slide/slide.pdf}
         \caption[クロック位相の調整]{クロック位相の調整~\cite{URL:09}。40~MHz~の~LHC~クロックの立ち上がりに対して、入力タイミングの確率分布の始まりを合わせるように位相を調整している。}
         \label{fig:clock}
 \end{figure}
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=0.9\textwidth,page=3]{img/slide/slide.pdf}
         \caption[BCID~ゲート幅の調整]{BCID ゲート幅の調整~\cite{URL:09}。入力タイミングの確率分布がすべて収まるように、BCID~ゲートの幅が調整されている。}
         \label{fig:gate0}
 \end{figure}
-\begin{figure}[H]
+\begin{figure}[tbp]
         \centering   
         \includegraphics[width=0.7\textwidth,page=4]{img/slide/slide.pdf}
         \caption[バンチ判定の概念図]{バンチ判定の概念図。LHC~クロックに対してゲートが設定されており、入力信号のタイミングにより、前バンチ、前かつ基準バンチ、基準バンチ、基準かつ次バンチ、次バンチの~5~段階で判定が行われる。}
@@ -324,7 +324,7 @@ TGC~出力信号は内在的な時間の揺らぎの影響で陽子衝突間隔~
 	\label{tb:BCIDGate}
 \end{table}
 
-\begin{figure}[H]
+\begin{figure}[tbp]
 		\begin{minipage}{0.49\hsize}
 		\centering
         \includegraphics[width=0.9\textwidth,page=3]{img/pdf/PP.pdf}
@@ -396,7 +396,7 @@ TGC~システムにおいて正しくバンチ判定を行うには、バンチ�
 
 次章では、モンテカルロシミュレーションおよび~Run~2~の実験データを用いて、TGC~検出器におけるタイミング調整の調査を行う。
 
-\begin{figure}[H]
+\begin{figure}[tbp]
     \centering   
     \includegraphics[width=0.6\textwidth,page=8]{img/slide/slide.pdf}
     \caption{ミューオンの~TGC~各ステーションにおける飛来時間の一例}
