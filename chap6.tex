@@ -268,17 +268,17 @@ TGC~検出器では、粒子の信号ごとにバンチ識別を行っている�
 \begin{figure}[tbp]
     \begin{minipage}{0.49\hsize}
     \centering   
-    \includegraphics[width=\textwidth,page=2]{img/rec/eff_wire.pdf}
+    \includegraphics[width=\textwidth,page=5]{img/rec/eff_wire.pdf}
     \subcaption{}
     \end{minipage}
     \begin{minipage}{0.49\hsize}
     \centering   
-    \includegraphics[width=\textwidth,page=2]{img/rec/eff_strip.pdf}
+    \includegraphics[width=\textwidth,page=5]{img/rec/eff_strip.pdf}
     \subcaption{}
     \end{minipage} \\
     \begin{minipage}{0.99\hsize}
     \centering   
-    \includegraphics[width=0.5\textwidth,page=2]{img/rec/eff_both.pdf}
+    \includegraphics[width=0.5\textwidth,page=5]{img/rec/eff_both.pdf}
     \subcaption{}
     \end{minipage}
     \caption[較正後のシミュレーションにおける見積もり手法を用いたトリガー効率の算出]{較正後のシミュレーションにおける見積もり手法を用いたトリガー効率の算出。赤は~L1~シングルミューオントリガー、青は遅い荷電粒子探索用トリガーを想定して見積もられたトリガー効率。(a)ワイヤーの確率分布から得られたトリガー効率。(b)~ストリップの確率分布から得られたトリガー効率。(c)~ワイヤー、ストリップのトリガー効率を掛け合わせ見積もった全体のトリガー効率。}\label{fig:efftune}
@@ -297,44 +297,22 @@ TGC~検出器では、粒子の信号ごとにバンチ識別を行っている�
 \section{見積もり手法を利用したRun~2~の実験データとシミュレーションの比較}
 \secref{sec:est}で説明したバンチ判定を利用したトリガー効率の見積もり手法を用いて、実際に~Run~2~のデータにおけるトリガー効率を算出する。シミュレーションを用いて得られたトリガー効率との差を比較することで、シミュレーションの評価を行う。
 \subsection{確率分布関数の定義}
-\secref{sec:pro}で説明した確率分布関数の定義方法を利用して、Run~2~の実験データおよびタイミング較正前後のシミュレーションにおける確率分布関数を定義する。定義のために必要なバンチ判定の分布には、\subsecref{chap:caltri}において記載した結果を利用している。確率分布関数の算出結果を\figref{fig:recall}並びに\figref{fig:recall1}に示す。実験データ、シミュレーションそれぞれに求めた確率分布関数をもとに、\secref{sec:prob}で述べた粒子速度に依存した確率分布の見積もりの計算を行い、トリガー効率を\secref{sec:prot}の要領で算出する。
+\secref{sec:pro}で説明した確率分布関数の定義方法を利用して、Run~2~の実験データおよびタイミング較正前後のシミュレーションにおける確率分布関数を定義する。定義のために必要なバンチ判定の分布には、\subsecref{chap:caltri}において記載した結果を利用している。確率分布関数の算出結果を\figref{fig:recall}に示す。実験データの確率分布はシミュレーションに対して分布の幅が大きいことが分かる。これはシミュレーションでの想定以上にデータにおけるタイミングにふらつきが生じていることを示唆している。より詳細に分布を再現するには\subsecref{subsec:cali}で述べた前のバンチを含めたタイミング較正等が必要となる。
+
+実験データ、シミュレーションそれぞれに求めた確率分布関数をもとに、\secref{sec:prob}で述べた粒子速度に依存した確率分布の見積もりの計算を行い、トリガー効率を\secref{sec:prot}の要領で算出する。
 
 \begin{figure}[tbp]
-    \begin{minipage}{0.33\hsize}
+    \begin{minipage}{0.49\hsize}
     \centering   
-    \includegraphics[width=\textwidth,page=1]{img/rec/rec_ori_w.pdf}
+    \includegraphics[width=\textwidth,page=1]{img/rec/recwire.pdf}
     \subcaption{}
     \end{minipage}
-    \begin{minipage}{0.33\hsize}
+    \begin{minipage}{0.49\hsize}
     \centering   
-    \includegraphics[width=\textwidth,page=1]{img/rec/rec_tune_w.pdf}
+    \includegraphics[width=\textwidth,page=1]{img/rec/recstrip.pdf}
     \subcaption{}
     \end{minipage}
-    \begin{minipage}{0.33\hsize}
-    \centering   
-    \includegraphics[width=\textwidth,page=1]{img/rec/rec_data_w.pdf}
-    \subcaption{}
-    \end{minipage}
-    \caption[実験データおよびシミュレーションにおけるバンチ判定から推定したワイヤーのヒットタイミングの確率分布]{実験データおよびシミュレーションにおけるバンチ判定から推定したワイヤーのヒットタイミングの確率分布。$R_{\rm{p{\land}c}},~R_{\rm{c}},~R_{\rm{c{\land}n}}$はそれぞれ前かつ基準バンチ、基準バンチ、基準かつ次バンチの確率分布における割合を示している。(a)~較正前のシミュレーション。(b)~較正後のシミュレーション。(c)~Run~2~の実験データ。}\label{fig:recall}
-\end{figure}
-
-\begin{figure}[tbp]
-    \begin{minipage}{0.33\hsize}
-    \centering   
-    \includegraphics[width=\textwidth,page=1]{img/rec/rec_ori_s.pdf}
-    \subcaption{}
-    \end{minipage}
-    \begin{minipage}{0.33\hsize}
-    \centering   
-    \includegraphics[width=\textwidth,page=1]{img/rec/rec_tune_s.pdf}
-    \subcaption{}
-    \end{minipage}
-    \begin{minipage}{0.33\hsize}
-    \centering   
-    \includegraphics[width=\textwidth,page=1]{img/rec/rec_data_s.pdf}
-    \subcaption{}
-    \end{minipage} 
-    \caption[実験データおよびシミュレーションにおけるバンチ判定から推定したストリップのヒットタイミングの確率分布]{実験データおよびシミュレーションにおけるバンチ判定から推定したストリップのヒットタイミングの確率分布。$R_{\rm{p{\land}c}},~R_{\rm{c}},~R_{\rm{c{\land}n}}$はそれぞれ前かつ基準バンチ、基準バンチ、基準かつ次バンチの確率分布における割合を示している。(a)~較正前のシミュレーション。(b)~較正後のシミュレーション。(c)~Run~2~の実験データ。}\label{fig:recall1}
+    \caption[実験データおよびシミュレーションにおけるバンチ判定から推定したヒットタイミングの確率分布]{実験データおよびシミュレーションにおけるバンチ判定から推定したヒットタイミングの確率分布。橙色、緑色、青色はそれぞれ~Run~2~のデータ、改良後のシミュレーション、改良前のシミュレーションを表している。(a)~ワイヤーチャンネル。(b)~ストリップチャンネル。}\label{fig:recall}
 \end{figure}
 
 \subsection{見積もり手法を用いたトリガー効率の比較}
