@@ -12,8 +12,8 @@ Run~2~後半に新たに導入された重い荷電粒子探索用トリガー�
 \subsection{タイミング較正に伴ったトリガー効率の比較}\label{sec:tribeta}
 タイミング較正前後のシミュレーションにおける粒子速度に依存したトリガー効率を\figref{fig:tribeta}に示す。較正前後においてバンチ判定の分布の変化に伴い、トリガーできる$\beta$の領域が変化していることが分かる。これは、タイミング較正によりバンチを判定するタイミングに違いがあることが影響していると示唆される。また、$\beta=1.0$の光速の領域においては較正前後においてトリガー効率に変化はないことが分かる。
 
-また、\figref{fig:tript}、\figref{fig:trieta}はそれぞれ運動量、$\eta$に依存したスタウサンプルに対するトリガー効率を示している。タイミング較正前後における各トリガー効率を比較するとトリガーできている領域に違いがみられる。トリガー領域に違いがみられる原因としては$\beta$方向のトリガー領域の変化によるものであると考えられる。詳細は\figref{fig:tripteta}、\figref{fig:triptbeta}、\figref{fig:trietabeta}を用いて考察する。
-\figref{fig:tripteta}は$p_{\rm{T}},~\eta$方向に区分したトリガー事象の分布、\figref{fig:triptbeta}は$p_{\rm{T}},~\beta$方向に区分したトリガー事象の分布、\figref{fig:trietabeta}は$\eta,~\beta$方向に区分したトリガー事象の分布を示している。グラフからそれぞれの変数に対して依存性がみられ、事象数としてはシミュレーション間において同一のふるまいを示しているが、タイミング較正によりトリガー事象の分布に変化がみられることが分かる。\figref{fig:tript}におけるふるまいの変化は、\figref{fig:triptbeta}より、トリガー可能な$\beta$の領域の変化と$p_{\rm{T}}$と$\beta$の依存性による影響であることが分かる。 
+また\figref{fig:tript}は横運動量、$\eta$に依存したスタウサンプルに対するトリガー効率を示している。タイミング較正前後における各トリガー効率を比較するとトリガーできている領域に違いがみられる。トリガー領域に違いがみられる原因としては$\beta$方向のトリガー領域の変化によるものであると考えられる。
+\figref{fig:tripteta}は$\eta,~\beta$、$p_{\rm{T}},~\beta$および$p_{\rm{T}},~\beta$方向に区分したトリガー事象の分布を示している。グラフからそれぞれの変数に対して依存性がみられ、事象数としてはシミュレーション間において同一のふるまいを示しているが、タイミング較正によりトリガー事象の分布に変化がみられることが分かる。\figref{fig:tript}におけるふるまいの変化は、\figref{fig:tripteta}の中図より$p_{\rm{T}}$と$\beta$の依存性による影響であることが分かる。 
 \begin{figure}[tbp]
     \begin{minipage}{0.49\hsize}
     \centering   
@@ -31,54 +31,20 @@ Run~2~後半に新たに導入された重い荷電粒子探索用トリガー�
     \begin{minipage}{0.49\hsize}
     \centering   
     \includegraphics[width=\textwidth,page=4]{img/rec/stau_600_ori.pdf}
-    \subcaption{}
     \end{minipage}
     \begin{minipage}{0.49\hsize}
     \centering   
     \includegraphics[width=\textwidth,page=4]{img/rec/stau_600.pdf}
-    \subcaption{}
-    \end{minipage}
-    \caption[スタウ粒子サンプルにおけるタイミング較正前後の横運動量に依存したトリガー効率の比較]{スタウ粒子サンプルにおけるタイミング較正前後の横運動量に依存したトリガー効率の比較。黒~(●)~は~L1~ミューオントリガー、赤~(●)~は横運動量閾値~10~GeV~の~L1~シングルミューオントリガー、青~(●)~は横運動量閾値~10~GeV~の遅い荷電粒子探索用トリガー、青~(▲)~は~MET~トリガーを要求しない遅い荷電粒子探索用トリガーのトリガー効率を示す。(a)~較正前のシミュレーション。(b)~較正後のシミュレーション。}\label{fig:tript}
-\end{figure}
-\begin{figure}[tbp]
+    \end{minipage}\\
     \begin{minipage}{0.49\hsize}
     \centering   
     \includegraphics[width=\textwidth,page=9]{img/rec/stau_600_ori.pdf}
-    \subcaption{}
     \end{minipage}
     \begin{minipage}{0.49\hsize}
     \centering   
     \includegraphics[width=\textwidth,page=9]{img/rec/stau_600.pdf}
-    \subcaption{}
     \end{minipage}
-    \caption[スタウ粒子サンプルにおけるタイミング較正前後の$\eta$に依存したトリガー効率の比較]{スタウ粒子サンプルにおけるタイミング較正前後の$\eta$に依存したトリガー効率の比較。黒~(●)~は~L1~ミューオントリガー、赤~(●)~は横運動量閾値~10~GeV~の~L1~シングルミューオントリガー、青~(●)~は横運動量閾値~10~GeV~の遅い荷電粒子探索用トリガー、青~(▲)~は~MET~トリガーを要求しない遅い荷電粒子探索用トリガーのトリガー効率を示す。(a)~較正前のシミュレーション。(b)~較正後のシミュレーション。}\label{fig:trieta}
-\end{figure}
-
-\begin{figure}[tbp]
-    \begin{minipage}{0.49\hsize}
-    \centering   
-    \includegraphics[width=\textwidth,page=14]{img/rec/stau_600_ori.pdf}
-    \subcaption{}
-    \end{minipage}
-    \begin{minipage}{0.49\hsize}
-    \centering   
-    \includegraphics[width=\textwidth,page=14]{img/rec/stau_600.pdf}
-    \subcaption{}
-    \end{minipage}
-    \caption[スタウ粒子サンプルにおけるタイミング較正前後の$\eta$および横運動量に依存したトリガー効率の比較]{スタウ粒子サンプルにおけるタイミング較正前後の$\eta$および横運動量に依存したトリガー効率の比較。黒の四角は事象数、赤は横運動量閾値~10~GeV~の~L1~シングルミューオントリガー、青は横運動量閾値~10~GeV~の遅い荷電粒子探索用トリガーを通過した事象を示す。(a)~較正前のシミュレーション。(b)~較正後のシミュレーション。}\label{fig:tripteta}
-\end{figure}
-\begin{figure}[tbp]
-    \begin{minipage}{0.49\hsize}
-    \centering   
-    \includegraphics[width=\textwidth,page=15]{img/rec/stau_600_ori.pdf}
-    \subcaption{}
-    \end{minipage}
-    \begin{minipage}{0.49\hsize}
-    \centering   
-    \includegraphics[width=\textwidth,page=15]{img/rec/stau_600.pdf}
-    \subcaption{}
-    \end{minipage}
-    \caption[スタウ粒子サンプルにおけるタイミング較正前後の速度および横運動量に依存したトリガー効率の比較]{スタウ粒子サンプルにおけるタイミング較正前後の速度および横運動量に依存したトリガー効率の比較。黒の四角は事象数、赤は横運動量閾値~10~GeV~の~L1~シングルミューオントリガー、青は横運動量閾値~10~GeV~の遅い荷電粒子探索用トリガーを通過した事象を示す。(a)~較正前のシミュレーション。(b)~較正後のシミュレーション。}\label{fig:triptbeta}
+    \caption[スタウ粒子サンプルにおけるタイミング較正前後の各変数に依存したトリガー効率の比較]{スタウ粒子サンプルにおけるタイミング較正前後の各変数に依存したトリガー効率の比較。左図は較正前、右図は較正後のシミュレーション。上図は横運動量、下図は$\eta$の依存を表している。黒~(●)~は~L1~ミューオントリガー、赤~(●)~は横運動量閾値~10~GeV~の~L1~シングルミューオントリガー、青~(●)~は横運動量閾値~10~GeV~の遅い荷電粒子探索用トリガー、青~(▲)~は~MET~トリガーを要求しない遅い荷電粒子探索用トリガーのトリガー効率を示す。}\label{fig:tript}
 \end{figure}
 \begin{figure}[tbp]
     \begin{minipage}{0.49\hsize}
@@ -90,8 +56,28 @@ Run~2~後半に新たに導入された重い荷電粒子探索用トリガー�
     \centering   
     \includegraphics[width=\textwidth,page=16]{img/rec/stau_600.pdf}
     \subcaption{}
+    \end{minipage}\\
+    \begin{minipage}{0.49\hsize}
+    \centering   
+    \includegraphics[width=\textwidth,page=15]{img/rec/stau_600_ori.pdf}
+    \subcaption{}
     \end{minipage}
-    \caption[スタウ粒子サンプルにおけるタイミング較正前後の速度および$\eta$に依存したトリガー効率の比較]{スタウ粒子サンプルにおけるタイミング較正前後の速度および$\eta$に依存したトリガー効率の比較。黒の四角は事象数、赤は横運動量閾値~10~GeV~の~L1~シングルミューオントリガー、青は横運動量閾値~10~GeV~の遅い荷電粒子探索用トリガーを通過した事象を示す。(a)~較正前のシミュレーション。(b)~較正後のシミュレーション。}\label{fig:trietabeta}
+    \begin{minipage}{0.49\hsize}
+    \centering   
+    \includegraphics[width=\textwidth,page=15]{img/rec/stau_600.pdf}
+    \subcaption{}
+    \end{minipage}\\
+    \begin{minipage}{0.49\hsize}
+    \centering   
+    \includegraphics[width=\textwidth,page=14]{img/rec/stau_600_ori.pdf}
+    \subcaption{}
+    \end{minipage}
+    \begin{minipage}{0.49\hsize}
+    \centering   
+    \includegraphics[width=\textwidth,page=14]{img/rec/stau_600.pdf}
+    \subcaption{}
+    \end{minipage}
+    \caption[スタウ粒子サンプルにおけるタイミング較正前後の各変数に依存した事象の比較]{スタウ粒子サンプルにおけるタイミング較正前後の各変数に依存した事象の比較。左図は較正前、右図は較正後のシミュレーション。上図は$\eta$および速度、中図は横運動量および速度、下図は横運動量および$\eta$の依存を表している。黒の四角は事象数、赤は横運動量閾値~10~GeV~の~L1~シングルミューオントリガー、青は横運動量閾値~10~GeV~の遅い荷電粒子探索用トリガーを通過した事象を示す。}\label{fig:tripteta}
 \end{figure}
 
 \subsection{粒子質量の違いによるトリガー効率の比較}\label{sec:trimass}
@@ -110,83 +96,64 @@ Run~2~後半に新たに導入された重い荷電粒子探索用トリガー�
     \end{minipage}
     \caption[質量の異なるスタウ粒子サンプルにおける速度に依存したトリガー効率の比較]{質量の異なるスタウ粒子サンプルにおける速度に依存したトリガー効率の比較。タイミング較正後のシミュレーションを利用している。赤は横運動量閾値~10~GeV~の~L1~シングルミューオントリガー、青は横運動量閾値~10~GeV~の遅い荷電粒子探索用トリガーのトリガー効率を示す。(a)~質量~600~GeV。(b)~質量~1000~GeV。}\label{fig:tribeta6}
 \end{figure}
-\figref{fig:tript6}を見ると、まず~L1~トリガー全体として取得できる$p_{\rm{T}}$の領域が異なっていることが分かる。これは同じ粒子速度である場合でも、質量が大きくなると$p_{\rm{T}}$の値が大きくなることに由来する。同じ$p_{\rm{T}}$の場合、質量が大きい方が粒子速度が遅くなるため、バンチ判定においては次バンチの割合が大きくなる。
-また、\figref{fig:tribeta6}に$p_{\rm{T}},~\beta$の~トリガー領域と事象数の分布を示した。\secref{sec:tribeta}のときとは異なり、事象が観測される領域についても変化していることが分かる。
+\figref{fig:tript6}の上図から~L1~トリガー全体として取得できる$p_{\rm{T}}$の領域が異なっていることが分かる。これは同じ粒子速度である場合でも、質量が大きくなると$p_{\rm{T}}$の値が大きくなることに由来する。同じ$p_{\rm{T}}$の場合、質量が大きい方が粒子速度が遅くなるため、バンチ判定においては次バンチの割合が大きくなる。
+\figref{fig:trietabeta6}に$\eta,~\beta$、$p_{\rm{T}},~\beta$および$p_{\rm{T}},~\eta$に依存したトリガー可能領域と事象数の分布を示す。
+\secref{sec:tribeta}のときとは異なり、事象が観測される領域についても変化していることが分かる。
 以上の理由により質量が大きいサンプルの方がトリガーできる$p_{\rm{T}}$の領域が$p_{\rm{T}}$の高い方向にシフトしている。
+\figref{fig:tript6}の下図では質量差による影響が確認でき$\eta$方向においてもトリガー可能な領域に違いがみられる。
 
-\figref{fig:trieta6}に関しても、質量差による影響が確認でき$\eta$方向においてもトリガー領域に違いがみられる。
-\figref{fig:tripteta6}、\figref{fig:trietabeta6}に$p_{\rm{T}},~\eta$および$p_{\rm{T}},~\beta$の~トリガー領域と事象数の分布を示した。
 \begin{figure}[tbp]
     \begin{minipage}{0.49\hsize}
     \centering   
     \includegraphics[width=\textwidth,page=4]{img/rec/stau_600.pdf}
-    \subcaption{}
     \end{minipage}
     \begin{minipage}{0.49\hsize}
     \centering   
     \includegraphics[width=\textwidth,page=4]{img/rec/stau_1000.pdf}
-    \subcaption{}
-    \end{minipage}
-    \caption[質量の異なるスタウ粒子サンプルにおける横運動量に依存したトリガー効率の比較]{質量の異なるスタウ粒子サンプルにおける横運動量に依存したトリガー効率の比較。タイミング較正後のシミュレーションを利用している。黒~(●)~は~L1~ミューオントリガー、赤~(●)~は横運動量閾値~10~GeV~の~L1~シングルミューオントリガー、青~(●)~は横運動量閾値~10~GeV~の遅い荷電粒子探索用トリガー、青~(▲)~は~MET~トリガーを要求しない遅い荷電粒子探索用トリガーのトリガー効率を示す。(a)~質量~600~GeV。(b)~質量~1000~GeV。}\label{fig:tript6}
-\end{figure}
-\begin{figure}[tbp]
+    \end{minipage}\\
     \begin{minipage}{0.49\hsize}
     \centering   
     \includegraphics[width=\textwidth,page=9]{img/rec/stau_600.pdf}
-    \subcaption{}
     \end{minipage}
     \begin{minipage}{0.49\hsize}
     \centering   
     \includegraphics[width=\textwidth,page=9]{img/rec/stau_1000.pdf}
-    \subcaption{}
     \end{minipage}
-    \caption[質量の異なるスタウ粒子サンプルにおける$\eta$に依存したトリガー効率の比較]{質量の異なるスタウ粒子サンプルにおける$\eta$に依存したトリガー効率の比較。タイミング較正後のシミュレーションを利用している。黒~(●)~は~L1~ミューオントリガー、赤~(●)~は横運動量閾値~10~GeV~の~L1~シングルミューオントリガー、青~(●)~は横運動量閾値~10~GeV~の遅い荷電粒子探索用トリガー、青~(▲)~は~MET~トリガーを要求しない遅い荷電粒子探索用トリガーのトリガー効率を示す。(a)~質量~600~GeV。(b)~質量~1000~GeV。}\label{fig:trieta6}
-\end{figure}
-\begin{figure}[tbp]
-    \begin{minipage}{0.49\hsize}
-    \centering   
-    \includegraphics[width=\textwidth,page=14]{img/rec/stau_600.pdf}
-    \subcaption{}
-    \end{minipage}
-    \begin{minipage}{0.49\hsize}
-    \centering   
-    \includegraphics[width=\textwidth,page=14]{img/rec/stau_1000.pdf}
-    \subcaption{}
-    \end{minipage}
-    \caption[質量の異なるスタウ粒子サンプルにおける$\eta$および横運動量に依存したトリガー効率の比較]{質量の異なるスタウ粒子サンプルにおける$\eta$および横運動量に依存したトリガー効率の比較。タイミング較正後のシミュレーションを利用している。黒の四角は事象数、赤は横運動量閾値~10~GeV~の~L1~シングルミューオントリガー、青は横運動量閾値~10~GeV~の遅い荷電粒子探索用トリガーを通過した事象を示す。(a)~質量~600~GeV。(b)~質量~1000~GeV。}\label{fig:tripteta6}
-\end{figure}
-\begin{figure}[tbp]
-    \begin{minipage}{0.49\hsize}
-    \centering   
-    \includegraphics[width=\textwidth,page=15]{img/rec/stau_600.pdf}
-    \subcaption{}
-    \end{minipage}
-    \begin{minipage}{0.49\hsize}
-    \centering   
-    \includegraphics[width=\textwidth,page=15]{img/rec/stau_1000.pdf}
-    \subcaption{}
-    \end{minipage}
-    \caption[質量の異なるスタウ粒子サンプルにおける速度および横運動量に依存したトリガー効率の比較]{質量の異なるスタウ粒子サンプルにおける速度および横運動量に依存したトリガー効率の比較。タイミング較正後のシミュレーションを利用している。黒の四角は事象数、赤は横運動量閾値~10~GeV~の~L1~シングルミューオントリガー、青は横運動量閾値~10~GeV~の遅い荷電粒子探索用トリガーを通過した事象を示す。(a)~質量~600~GeV。(b)~質量~1000~GeV。}\label{fig:triptbeta6}
+    \caption[質量の異なるスタウ粒子サンプルにおける各変数に依存したトリガー効率の比較]{質量の異なるスタウ粒子サンプルにおける各変数に依存したトリガー効率の比較。左図は質量~600~GeV、右図は質量~1000~GeV~のサンプル。上図は横運動量、下図は$\eta$の依存を表している。タイミング較正後のシミュレーションを利用している。黒~(●)~は~L1~ミューオントリガー、赤~(●)~は横運動量閾値~10~GeV~の~L1~シングルミューオントリガー、青~(●)~は横運動量閾値~10~GeV~の遅い荷電粒子探索用トリガー、青~(▲)~は~MET~トリガーを要求しない遅い荷電粒子探索用トリガーのトリガー効率を示す。}\label{fig:tript6}
 \end{figure}
 \begin{figure}[tbp]
     \begin{minipage}{0.49\hsize}
     \centering   
     \includegraphics[width=\textwidth,page=16]{img/rec/stau_600.pdf}
-    \subcaption{}
     \end{minipage}
     \begin{minipage}{0.49\hsize}
     \centering   
     \includegraphics[width=\textwidth,page=16]{img/rec/stau_1000.pdf}
-    \subcaption{}
+    \end{minipage}\\
+    \begin{minipage}{0.49\hsize}
+    \centering   
+    \includegraphics[width=\textwidth,page=15]{img/rec/stau_600.pdf}
     \end{minipage}
-    \caption[質量の異なるスタウ粒子サンプルにおける速度および$\eta$に依存したトリガー効率の比較]{質量の異なるスタウ粒子サンプルにおける速度および$\eta$に依存したトリガー効率の比較。タイミング較正後のシミュレーションを利用している。黒の四角は事象数、赤は横運動量閾値~10~GeV~の~L1~シングルミューオントリガー、青は横運動量閾値~10~GeV~の遅い荷電粒子探索用トリガーを通過した事象を示す。(a)~質量~600~GeV。(b)~質量~1000~GeV。}\label{fig:trietabeta6}
+    \begin{minipage}{0.49\hsize}
+    \centering   
+    \includegraphics[width=\textwidth,page=15]{img/rec/stau_1000.pdf}
+    \end{minipage}\\
+    \begin{minipage}{0.49\hsize}
+    \centering   
+    \includegraphics[width=\textwidth,page=14]{img/rec/stau_600.pdf}
+    \end{minipage}
+    \begin{minipage}{0.49\hsize}
+    \centering   
+    \includegraphics[width=\textwidth,page=14]{img/rec/stau_1000.pdf}
+    \end{minipage}
+    \caption[質量の異なるスタウ粒子サンプルにおける各変数に依存した事象の比較]{質量の異なるスタウ粒子サンプルにおける各変数に依存した事象の比較。左図は質量~600~GeV、右図は質量~1000~GeV~のサンプル。上図は$\eta$および速度、中図は横運動量および速度、下図は横運動量および$\eta$の依存を表している。タイミング較正後のシミュレーションを利用している。黒の四角は事象数、赤は横運動量閾値~10~GeV~の~L1~シングルミューオントリガー、青は横運動量閾値~10~GeV~の遅い荷電粒子探索用トリガーを通過した事象を示す。}\label{fig:trietabeta6}
 \end{figure}
 
 \section{速度に依存したトリガー効率の新しい見積もり手法の構築}\label{sec:est}
 \secref{sec:tribeta}、\secref{sec:trimass}では、シミュレーションを用いて、タイミング較正に伴うトリガー効率への影響およびサンプルの質量の違いに伴うトリガー効率への影響について考察してきた。タイミング較正前後の比較においてはトリガー可能な$\beta$の領域に違いがみられることを示し~TGC~のタイミング判定がトリガー効率の速度依存性に直結することが分かった。
 
-物理解析を行う場合、実験データにおけるトリガー効率を算出することが必要であるが、実験において超対称性粒子は未観測であり直接的なトリガー効率の算出はできない。
-本研究では実験データにおけるトリガー効率を見積もるための新たな解析手法を開発した。
+物理解析を行う場合、獲得可能な事象数を見積もるために実験データにおけるトリガー効率を算出することが必要であるが、実験において超対称性粒子は未観測であり直接的なトリガー効率の算出はできない。
+本研究では実験データにおけるトリガー効率を見積もるための新たな解析手法を開発した結果を示す。
 
 \subsection{確率分布関数の定義方法}\label{sec:pro}
 TGC~検出器では、粒子の信号ごとにバンチ識別を行っている。
@@ -216,7 +183,7 @@ TGC~検出器では、粒子の信号ごとにバンチ識別を行っている�
 \subsection{粒子速度と確率分布}\label{sec:prob}
 前節で求めた確率分布関数は$\beta=1.0$のミューオンの確率分布であると考えることができる。速度の遅い粒子における確率分布を考える場合は、上記のミューオンに対してどれだけ遅れているかという指標をもとに算出することができる。例えば、TGC~の任意のチェンバーに対して速度の遅い粒子が到達する場合を仮定する。このとき、速度の遅い粒子と光速の粒子の同じ場所での到達時間差が計算上、$t$であったとする。すると任意のチェンバーに対する速度の遅い粒子の確率分布は、光速のミューオンの確率分布を$t$だけ遅らせたものであると考えられる。以上の仮定をもとに粒子速度と到達時間の関係から速度の遅い粒子の確率分布を見積もる。
 
-粒子の飛来時間は~TGC~の位置と飛来する角度によって異なる。そこで\figref{fig:velo}に示すように飛来時間が短い~M1~と飛来時間が長い~M3~での角度ごとによる粒子の到達時間を考え、確率分布を見積もった。角度に関しては、エンドキャップ領域において$\eta$を~0.1~毎に分割して考え、各角度での粒子到達時間を計算した。\figref{fig:recbeta}、\figref{fig:recbeta1}は任意の角度方向において粒子速度の変化により確率分布がどのように変化するかを表した図である。M1~と~M3~での確率分布を算出し両者の確率のかけ合わせにより、トリガーできる割合を見積もる。
+粒子の飛来時間は~TGC~の位置と飛来する角度によって異なる。そこで\figref{fig:velo}に示すように飛来時間が短い~M1~と飛来時間が長い~M3~での角度ごとによる粒子の到達時間を考え、確率分布を見積もった。角度に関しては、エンドキャップ領域において$\eta$を~0.1~毎に分割して考え、各角度での粒子到達時間を計算した。\figref{fig:recbeta}は任意の角度方向において粒子速度の変化により確率分布がどのように変化するかを表した図である。M1~と~M3~での確率分布を算出し両者の確率のかけ合わせにより、トリガーできる割合を見積もる。
 \begin{figure}[tbp]
     \centering   
     \includegraphics[width=0.7\textwidth,page=1]{img/slide/BX.pdf}
@@ -227,22 +194,15 @@ TGC~検出器では、粒子の信号ごとにバンチ識別を行っている�
     \begin{minipage}{0.33\hsize}
     \centering   
     \includegraphics[width=\textwidth,page=11]{img/rec/rec_e1.3_s.pdf}
-    \subcaption{}
     \end{minipage}
     \begin{minipage}{0.33\hsize}
     \centering   
     \includegraphics[width=\textwidth,page=9]{img/rec/rec_e1.3_s.pdf}
-    \subcaption{}
     \end{minipage}
     \begin{minipage}{0.33\hsize}
     \centering   
     \includegraphics[width=\textwidth,page=7]{img/rec/rec_e1.3_s.pdf}
-    \subcaption{}
-    \end{minipage}
-    \caption[$|\eta|=1.3$における粒子速度に依存した確率分布の変化]{$|\eta|=1.3$における粒子速度に依存した確率分布の変化。赤が~M1~における確率分布、青が~M3~における確率分布を示している。(a)~$\beta=1.0$。(b)~$\beta=0.8$。(c)~$\beta=0.6$。}\label{fig:recbeta}
-\end{figure}
-
-\begin{figure}[tbp]
+    \end{minipage}\\
     \begin{minipage}{0.33\hsize}
     \centering   
     \includegraphics[width=\textwidth,page=11]{img/rec/rec_e2.2_s.pdf}
@@ -258,7 +218,7 @@ TGC~検出器では、粒子の信号ごとにバンチ識別を行っている�
     \includegraphics[width=\textwidth,page=7]{img/rec/rec_e2.2_s.pdf}
     \subcaption{}
     \end{minipage}
-    \caption[$|\eta|=2.2$における粒子速度に依存した確率分布の変化]{$|\eta|=2.2$における粒子速度に依存した確率分布の変化。赤が~M1~における確率分布、青が~M3~における確率分布を示している。(a)~$\beta=1.0$。(b)~$\beta=0.8$。(c)~$\beta=0.6$。}\label{fig:recbeta1}
+    \caption[粒子速度に依存した確率分布の変化]{粒子速度に依存した確率分布の変化。上図は$|\eta|=1.3$、下図は$|\eta|=2.2$の領域での分布を示している。赤が~M1~における確率分布、青が~M3~における確率分布を示している。(a)~$\beta=1.0$。(b)~$\beta=0.8$。(c)~$\beta=0.6$。}\label{fig:recbeta}
 \end{figure}
 
 \subsection{トリガー効率の算出}\label{sec:prot}
@@ -290,7 +250,7 @@ TGC~検出器では、粒子の信号ごとにバンチ識別を行っている�
 
 \begin{figure}[tbp]
     \centering   
-    \includegraphics[width=0.8\textwidth,page=1]{img/rec/vs.pdf}
+    \includegraphics[width=\textwidth,page=1]{img/rec/vs.pdf}
     \caption[トリガー効率見積もり手法とフルモンテカルロシミュレーションのトリガー効率の比較]{トリガー効率見積もり手法とフルモンテカルロシミュレーションのトリガー効率の比較。緑の実線は見積もり手法から算出したシングルミューオントリガー、破線は遅い荷電粒子探索用トリガー、赤はフルモンテカルロシミュレーションにおけるシングルミューオントリガー、青は遅い荷電粒子探索用トリガーのトリガー効率を示す。▲はスタウサンプルの質量~600~GeV、●はスタウサンプルの質量~1000~GeV。}\label{fig:comp}
 \end{figure}
 
@@ -323,7 +283,6 @@ TGC~検出器では、粒子の信号ごとにバンチ識別を行っている�
     \caption[トリガー効率の見積もり手法から算出したシミュレーションおよび実験データにおけるトリガー効率とフルモンテカルロシミュレーションにおけるトリガー効率の比較]{トリガー効率の見積もり手法から算出したシミュレーションおよび実験データにおけるトリガー効率とフルモンテカルロシミュレーションにおけるトリガー効率の比較。$|\eta|=1.2$の領域におけるトリガー効率を算出している。実線はシングルミューオントリガー、破線は遅い荷電粒子探索用トリガーの見積もり手法から算出されたトリガー効率を示す。緑は較正後のシミュレーション、橙は~Run~2~の実験データを表す。点はフルモンテカルロシミュレーションによるトリガー効率を示し、赤はシングルミューオントリガー、青は遅い荷電粒子探索用トリガーのトリガー効率を示す。▲はスタウサンプルの質量~600~GeV、●はスタウサンプルの質量~1000~GeV。}\label{fig:rectritune}
 \end{figure}
 \subsecref{chap:caltri}で評価したように、フルモンテカルロシミュレーションのトリガー効率と見積もり手法から算出したシミュレーションにおけるトリガー効率には、取得できる粒子の速度に良い一致がみられる。また見積もり手法における~Run~2の実験データとシミュレーションの比較においては、シングルミューオントリガーではよい一致が確認できるが、遅い荷電粒子用トリガーにおいては少しの差異がみられている。これは\tbref{tb:tunebcidM1}で示したバンチ判定の前かつ基準バンチの割合の差異が確率分布関数の定義に変化を与えていることが影響していると考えられる。
-
 \figref{fig:rectri}に~Run~2~における実験データおよびタイミング較正前後のシミュレーションそれぞれにおける見積もり手法をもとに算出したトリガー効率の比較を示す。実験データと較正後のシミュレーションにおいて遅い荷電粒子用トリガーの$0.7<\beta<0.9$の領域を除けばよい一致がみられている。
 \begin{figure}[tbp]
     \centering   
@@ -336,6 +295,6 @@ TGC~検出器では、粒子の信号ごとにバンチ識別を行っている�
 シミュレーションを改良し実験データのタイミング調整を詳細に再現したことは不確かさを削減していることを示唆している。
 バンチ判定分布を利用することで、新しい発想での粒子速度に依存したトリガー効率の評価方法を確立することに成功した。
 
-本研究で用いた見積もり手法はヒットタイミングの確率分布関数を仮定することによって算出している。確率分布関数算出における仮定の正当性は、実際に~TGC~におけるヒット信号の時間分布を精密に測定することで担保できる。ATLAS~実験においてはヒット信号読み出しの試験を行うための評価ボードの作成も進められている。評価ボードから得られた確率分布関数と本研究における確率分布関数を比較し、正当性を評価することは今後の課題の一つである。
+本研究で用いた見積もり手法はヒットタイミングの確率分布関数の仮定から算出している。確率分布関数算出における仮定の正当性は、実際に~TGC~におけるヒット信号の時間分布の測定を行うことで担保できる。ATLAS~実験においてはヒット信号読み出し試験を行うための評価ボードの作成も進められている~\cite{ikemo}。評価ボードから得られた確率分布と本研究における確率分布を比較し正当性を評価することは今後の課題の一つである。
 
 本研究では~TGC~検出器の詳細なタイミング較正を行った。実験データの新しいトリガー効率評価手法を確立し~Run~3~では重い長寿命荷電粒子探索のより不確かさの少ない物理解析が行えることが期待できる。
